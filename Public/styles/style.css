@@ -1,0 +1,14 @@
+body {
+  background: hotpink;
+}
+
+.main-blocks {
+  background: black;
+  display: inline-flex;
+  justify-content: center;
+  width: 15rem;
+  height: 12rem;
+  border: 1em solid white;
+}
+
+/*# sourceMappingURL=style.css.map */

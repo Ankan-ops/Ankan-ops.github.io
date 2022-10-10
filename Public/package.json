@@ -1,0 +1,24 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "json",
+  "main": "index.js",
+  "keywords": [
+    "json"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  },
+  "server-debug": "nodemon --inspect server.js",
+  "scripts": {
+    "scss": "sass --watch styles/style.scss styles/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "sass": "^1.55.0"
+  }
+}
