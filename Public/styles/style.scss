@@ -1,16 +1,173 @@
+
+html {
+	min-height: 100%;
+	
+}
+
+
 body {
+	background-image: linear-gradient(to bottom, rgba(255, 75, 10, 1.00), rgba(255, 75, 10, 0.1));
+	background-repeat: no-repeat;
 
-	background: hotpink;
+}
+
+
+h1 {
+	display:flex;
+	justify-content:center;
+	margin: 1em 0 4em 0;
+
 }
 
 
 
-.main-blocks {
 
-	background: black;
+.top-nav li {
 	display: inline-flex;
-	justify-content: center; 
-	width: 15rem;
-	height: 12rem;
-	border: 1em solid white; 
+	justify-content: space-between;
+	float:right;
+	padding: 1em 4em 1em 4em;
+	margin: -1em 2em 0em 2em;
+	background: black;
+	
+	
 }
+
+.all-block {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 3em;
+	//box-shadow: gray 4px 4px;
+}
+
+
+//This refers to the elements inside. The text
+.main-blocks {
+	display: flex;
+	justify-content: center;
+	background-color: rgba(25,25,24,1.0);
+	min-width: 10em;
+	max-width: 10em;
+	height: 13em;
+
+
+	border: 0.3em solid white;
+	border-radius: 6px;
+	color: white;
+	font-size: 2em;
+}
+
+
+
+
+.main-blocks:hover {
+	filter: drop-shadow(6px 6px 8px gray)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+	box-sizing: border-box;
+}
+
+
+.slideshow-container {
+	max-width: 900px;
+	position: relative;
+	margin: auto;
+}
+
+.mySlides img {
+	display: none;
+}
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: all;
+}
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8)
+}
+
+
+.text {
+	color: #f2f2f2;
+	display:flex;
+	justify-content:center;
+	font-size: 15px;
+	padding: 8px 12px;
+	bottom: 8px;
+	width: 100%;
+	margin-bottom: 1em;
+
+}
+
+
+
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4
+	}
+
+	to {
+		opacity: 1.0
+	}
+}
+
+
+
+
+
+
+
+
+
+
