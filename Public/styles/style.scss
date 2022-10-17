@@ -1,182 +1,176 @@
 
+/*Basline for all pages and index page*/
+
+
 html {
 	min-height: 100%;
+	max-width: 100%;
 	
 }
+
+
 
 
 body {
 	background-image: linear-gradient(to bottom, rgba(255, 75, 10, 1.00), rgba(255, 75, 10, 0.1));
 	background-repeat: no-repeat;
-
+	overflow-x: hidden;
+	overflow-y: auto;
 }
 
 
-h1 {
+.main-title    {
 	display:flex;
 	justify-content:center;
-	margin: 1em 0 4em 0;
-
+	margin: 2em 0 2em 0;
+	font-size: 2em;
 }
 
 
-.nav-item a {
-	color: white;
-	font-size: 1em;
-	font-weight: bold;
-	font-family: Cambria;
-	text-decoration: none;
-	text-shadow: 3px 3px (255, 75, 10, 1.00);
-	filter: drop-shadow(8px 8px rbga(24,24,25,0.8));
+.title-link {
+
+	color: black;
 }
 
 
-.nav-item a:hover {
-	color:rgba(0, 255, 255, 0.6);
-	animation: 
+
+.title-link:hover {
+	color: gray;
 }
 
-.top-nav li {
+#all {
 	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-between;
-	float: right;
-	padding: 1em 4em 1em 4em;
-	margin: -1em 2em 0em 2em;
-	background: black;
-	border-radius: 7px 0 7px 0;
-	filter: drop-shadow(6px 6px 8px gray)
-}
-
-.all-block {
-	display: flex;
-	justify-content: space-evenly;
-	margin: 3em;
+	justify-content: center;
+	margin-bottom: 2em;
+	
+	
 	//box-shadow: gray 4px 4px;
 }
 
 
 //This refers to the elements inside. The text
-.main-blocks {
-	display: flex;
-	justify-content: center;
+.main-blocks  {
+	display: inline-flex;
+	justify-content:center;
 	background-color: rgba(25,25,24,1.0);
 	min-width: 10em;
 	max-width: 10em;
-	
-
-
+	height: 12em;
+	align-items: center;
 	border: 0.3em solid white;
 	border-radius: 6px;
 	color: white;
 	font-size: 2em;
+	margin: 0 1em 2em 0
 }
 
 
+
+
+
+
+
+.arrow {
+
+	font-size: 30em;
+	background-color: hotpink;
+}
+
+ a:link {
+
+	text-decoration:none;
+}
 
 
 .main-blocks:hover {
-	filter: drop-shadow(6px 6px 8px gray)
+	filter: drop-shadow(6px 6px 6px #29114F)
 }
 
 
 
+/*Media queries for main pages and index page*/
 
 
+@media screen and (max-width: 800px) {
 
-
-
-
-
-
-
-
-
-
-
-* {
-	box-sizing: border-box;
+	#all {
+		min-height: 50%;
+	}
 }
 
 
-.slideshow-container {
-	max-width: 900px;
-	position: relative;
-	margin: auto;
+@media screen and (max-width: 800px) {
+
+	.main-blocks {
+		min-width: 25%;
+		min-height: 50%;
+		font-size: 0.8em;
+	}
 }
 
-.mySlides img {
-	display: none;
-}
-.prev, .next {
-	cursor: pointer;
-	position: absolute;
-	top: 50%;
-	width: auto;
-	margin-top: -22px;
-	padding: 16px;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	transition: 0.6s ease;
-	border-radius: 0 3px 3px 0;
-	user-select: all;
-}
-.next {
-	right: 0;
-	border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-	background-color: rgba(0,0,0,0.8)
-}
+//////////////////////////////////////////////////
+/////////////////////////////////////////////////
 
 
-.text {
-	color: #f2f2f2;
-	display:flex;
-	justify-content:center;
-	font-size: 15px;
-	padding: 8px 12px;
-	bottom: 8px;
+/*Footer and its queries*/
+
+
+
+#main-footer {
+	position: fixed;
+	bottom: 0;
 	width: 100%;
-	margin-bottom: 1em;
-
+	align-items: center;
+	background: black;
+	padding: 3em
 }
 
 
 
 
-.dot {
-	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
+.footer-item {
+	display: inline-flex;
+	align-content: center;
+	color: white;
+	margin: -1em 4em 0 2em;
+	padding-left: 4rem;
+	
 }
 
-.active, .dot:hover {
-	background-color: #717171;
-}
 
-.fade {
-	animation-name: fade;
-	animation-duration: 1.5s;
-}
+/*Media query por el pie*/
 
-@keyframes fade {
-	from {
-		opacity: 0.4
-	}
+@media screen and (max-width: 1200px) {
 
-	to {
-		opacity: 1.0
+	.footer-item {
+		margin: 0.5em;
+		display: flex;
+		flex-direction: column;
 	}
 }
 
+@media screen and (max-width: 1200px) {
+
+	#main-footer {
+		display: inline-flex;
+		padding: 2rem 0 2rem 0rem;
+	}
+}
+
+
+.footer-item:last-child {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	font-size: 0.8em;
+	min-width:3ch;
+}
+
+
+
+
+//////////////////////////////////////
+//////////////////////////////////////
 
 
 
@@ -186,3 +180,119 @@ h1 {
 
 
 
+/*"THIS IS DREAMHACK" page starts here*/
+
+.dreamhack-main {
+
+	font-size: 1.5em;
+	padding:4em 0 3em 0;
+	margin: 0em 0 6em 4em;
+	width: 50ch;
+
+}
+
+
+
+.picture-esl {
+	position: absolute;
+	top: 50em;
+	right: 15em;
+}
+
+.picture-dh {
+	position: absolute;
+	top: 56em;
+	right: 4em;
+}
+
+
+
+
+//////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
+
+
+
+
+
+
+
+/*Dreamhack info doc*/
+
+
+
+
+
+/*FIrst list (div) */
+
+#pack-block  {
+
+	display:inline-block;
+
+}
+
+
+
+
+.dreamhack-info {
+	
+	background: #E67553;
+	border-radius: 10px;
+	width: 35em;
+	margin: 0 0 3em 2em;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 0 0 2em 0;
+	filter: drop-shadow(4px 4px 3px black)
+}
+
+.list-essentials-header {
+	
+	padding-left:0.6em;
+	
+}
+
+/*Header in section (packing list)*/
+.dreamhack-info h2 {
+	background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+	border-radius: 6px 6px 0 0;
+	padding: 0.5em 0 1.2em 0.5em;
+	color: white;
+	filter: drop-shadow(2px 2px 3px black)
+}
+
+
+
+
+
+
+
+/* Second list (extras section)*/
+
+.dreamhack-info-second {
+
+	background: #E67553;
+	border-radius: 10px;
+	width: 35em;
+	margin: 0 0 10em 2em;
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 0 0 2em 0;
+	filter: drop-shadow(4px 4px 3px black);
+	font-size: 1.2em;
+	padding: 0 0 5em 0;
+
+
+}
+
+
+
+.list-extras-header {
+	
+	padding-left: 0.6em;
+	background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+	border-radius: 6px 6px 0 0;
+	padding: 0.5em 0 1.2em 0.5em;
+	color: white;
+	filter: drop-shadow(1px 1px 2px black)
+}
