@@ -8,9 +8,20 @@
   "display": "standalone",
   "icons": [
       {
-        "src": "../mainlogo.png",
-        "sizes": "300x300",
+        "src": "../pics/glowingdh.jpg",
+        "sizes": "600x600",
+        "type": "image/"
+      },
+      {
+        "src": "../pics/mainlogo.png",
+        "sizes": "512x512",
         "type": "image/png"
+
       }
+
+
+
   ]
+
+
 }

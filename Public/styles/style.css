@@ -74,6 +74,7 @@ a:link {
 @media screen and (max-width: 800px) {
   #all {
     min-height: 50%;
+    margin-right: 0.4em;
   }
 }
 @media screen and (max-width: 800px) {
@@ -96,17 +97,18 @@ a:link {
   position: fixed;
   bottom: 0;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   background: black;
-  padding: 3em;
+  padding: 2.7rem;
+  margin-top: 5em;
 }
 
 .footer-item {
   display: inline-flex;
-  align-content: center;
   color: white;
-  margin: -1em 4em 0 2em;
-  padding-left: 4rem;
+  font-size: 1.4rem;
 }
 
 /*Media query por el pie*/
@@ -134,8 +136,8 @@ a:link {
 /*"THIS IS DREAMHACK" page starts here*/
 .dreamhack-main {
   font-size: 1.5em;
-  padding: 4em 0 3em 0;
-  margin: 0em 0 6em 4em;
+  padding: 0em 0 3em 0;
+  margin: 8em 0 6em 4em;
   width: 50ch;
 }
 
@@ -146,16 +148,22 @@ a:link {
   }
 }
 /*Pictures*/
+#esl {
+  margin-bottom: 5em;
+}
+
 .picture-esl {
   position: absolute;
-  top: 48em;
-  right: 20em;
+  top: 120%;
+  right: 20%;
+  margin-bottom: 5em;
 }
 
 .picture-dh {
   position: absolute;
-  top: 56em;
-  right: 10em;
+  top: 140%;
+  right: 10%;
+  margin-bottom: 5em;
 }
 
 .picture-shelf {
@@ -166,26 +174,31 @@ a:link {
   border: solid rgb(43, 33, 33) 3px;
 }
 
-@media screen and (max-width: 1500px) {
-  .picture-esl {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin-top: 20em;
+@media screen and (max-width: 1200px) {
+  #esl {
+    position: relative;
+    margin-top: 3rem;
+    min-height: 50%;
   }
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1200px) {
+  .picture-esl {
+    position: relative;
+  }
+}
+@media screen and (max-width: 1200px) {
   .picture-dh {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: 0 0em 10em 5em;
+    left: -10%;
+    margin-bottom: 10rem;
+    min-height: 50%;
   }
 }
 /*Dreamhack info doc*/
 /*First list (div) */
 #pack-block {
   display: inline-block;
+  margin-bottom: 0;
 }
 
 .dreamhack-info {
@@ -210,6 +223,33 @@ a:link {
   padding: 0.5em 0 1.2em 0.5em;
   color: white;
   filter: drop-shadow(2px 2px 3px black);
+}
+
+.travel-plan {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  height: 8em;
+}
+
+.travel-dest {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 10em 0;
+  font-size: 2em;
+}
+
+.travel-header {
+  background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+  width: 25rem;
+  height: 1.4em;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  box-shadow: rgb(32, 38, 57) 3px 3px 3px;
+  margin: 0 0 10em 0;
+  font-size: 3em;
 }
 
 /* Second list (extras section)*/
@@ -237,20 +277,70 @@ a:link {
 
 /*LATEST NEWS*/
 .seatmap-header {
-  padding: 0 0 0.5em 1.4em;
+  padding: 0 0 0.5em 0.5em;
 }
 
 .seatmap-header-artist {
-  padding: 0 0 0.5em 1.2em;
+  padding: 0 0 0.5em 0.5em;
 }
 
 .seatmap {
-  margin: 0 0 10em 1em;
+  margin: 0 0 5em 1em;
   border: solid black 2px;
+  position: relative;
+}
+
+.artists {
+  margin: 0 0 20rem 1em;
+  border: solid black 2px;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .seatmap {
+    width: 70%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .artists {
+    width: 60%;
+    height: auto;
+  }
+}
+.artists:hover {
+  filter: drop-shadow(3px 3px 3px purple);
 }
 
 .seatmap:hover {
   filter: drop-shadow(3px 3px 3px purple);
+}
+
+#main-contact {
+  margin: 0 0 15em 0;
+}
+
+.contact-header {
+  background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+  width: 14%;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  color: white;
+  margin-left: 1.5rem;
+}
+
+.contact-text {
+  font-size: 1.3rem;
+  display: flex;
+}
+
+.contact-list li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5em;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
