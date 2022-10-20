@@ -8,6 +8,10 @@ html {
 	
 }
 
+@media screen and (max-width: 1200px) {
+
+	
+}
  
 
 
@@ -41,7 +45,7 @@ body {
 #all {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 	
 	
 	//box-shadow: gray 4px 4px;
@@ -70,11 +74,32 @@ body {
 
 
 
-.arrow {
-
-	font-size: 30em;
-	background-color: hotpink;
+#main-arrow {
+	display: flex;
+	
+	position:absolute;
+	
+	left: 13em;
+	
+	
+	
 }
+
+
+.arrow {
+	font-size: 2em;
+	display: flex;
+	padding: 0em 2em 12em 2em;
+	width: 9em;
+	margin: 0 0 6em 2em;
+	//background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+	height: 2em;
+}
+
+
+
+
+
 
  a:link {
 
@@ -191,25 +216,69 @@ body {
 
 }
 
+@media screen and (max-width: 1200px) {
+
+	.dreamhack-main {
+		width: 30ch;
+		margin-bottom: 10em;
+	}
+}
+
+
+
+
+
+
+/*Pictures*/
+
 
 
 .picture-esl {
 	position: absolute;
-	top: 50em;
-	right: 15em;
+	top: 48em;
+	right: 20em;
 }
 
 .picture-dh {
 	position: absolute;
 	top: 56em;
-	right: 4em;
+	right: 10em;
+}
+
+
+.picture-shelf {
+	position: absolute;
+	right: 2em;
+	top: 60rem;
+
+
+}
+
+@media screen and (max-width: 1500px) {
+
+	.picture-esl {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		margin-top: 20em;
+	}
+}
+
+
+
+@media screen and (max-width: 1500px) {
+
+	.picture-dh {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		margin: 0 0em 10em 5em;
+	}
 }
 
 
 
 
-//////////////////////////////////////////////////////
-//////////////////////////////////////////////////////
 
 
 
@@ -217,25 +286,33 @@ body {
 
 
 
-/*Dreamhack info doc*/
+
+
+	//////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////
 
 
 
 
 
-/*FIrst list (div) */
 
-#pack-block  {
 
-	display:inline-block;
+	/*Dreamhack info doc*/
 
+
+
+
+
+/*First list (div) */
+
+#pack-block {
+	display: inline-block;
 }
 
 
 
 
 .dreamhack-info {
-	
 	background: #E67553;
 	border-radius: 10px;
 	width: 35em;
@@ -247,9 +324,7 @@ body {
 }
 
 .list-essentials-header {
-	
-	padding-left:0.6em;
-	
+	padding-left: 0.6em;
 }
 
 /*Header in section (packing list)*/
@@ -270,7 +345,6 @@ body {
 /* Second list (extras section)*/
 
 .dreamhack-info-second {
-
 	background: #E67553;
 	border-radius: 10px;
 	width: 35em;
@@ -281,18 +355,45 @@ body {
 	filter: drop-shadow(4px 4px 3px black);
 	font-size: 1.2em;
 	padding: 0 0 5em 0;
-
-
 }
 
 
 
 .list-extras-header {
-	
 	padding-left: 0.6em;
 	background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
 	border-radius: 6px 6px 0 0;
 	padding: 0.5em 0 1.2em 0.5em;
 	color: white;
 	filter: drop-shadow(1px 1px 2px black)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+	////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////////
+
+
+
+
+/*LATEST NEWS*/
+
+
+.seatmap {
+	display: flex;
+	padding: 0 0 8em 0;
+	margin-bottom: 8em;
+}
+
+.seatmap:hover {
+	filter:drop-shadow(3px 3px 3px purple)
 }
