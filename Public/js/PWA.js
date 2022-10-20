@@ -8,6 +8,6 @@ function init() {
 
 function clickOnBlock() {
     const kul = document.querySelector(".main-blocks");
-    kul.style.display = "none";
+    kul.display = none;
     console.log("hej");
 }

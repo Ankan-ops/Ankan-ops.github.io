@@ -3,8 +3,14 @@
   "name": "Dreamhack Companion",
   "short_name": "DH Companion",
   "start_url": "../",
-  
-
-
-
+  "background_color": "#FFF",
+  "theme_color":"#FF4B0A",
+  "display": "standalone",
+  "icons": [
+      {
+        "src": "../mainlogo.png",
+        "sizes": "300x300",
+        "type": "image/png"
+      }
+  ]
 }

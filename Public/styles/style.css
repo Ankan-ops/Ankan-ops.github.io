@@ -84,6 +84,14 @@ a:link {
   }
 }
 /*Footer and its queries*/
+@media screen and (max-width: 800px) {
+  .main-blocks {
+    min-width: 25%;
+    min-height: 50%;
+    font-size: 0.8em;
+  }
+}
+/*Footer and its queries*/
 #main-footer {
   position: fixed;
   bottom: 0;
@@ -154,6 +162,8 @@ a:link {
   position: absolute;
   right: 2em;
   top: 60rem;
+  box-shadow: 3px 3px 6px black;
+  border: solid rgb(43, 33, 33) 3px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -226,10 +236,17 @@ a:link {
 }
 
 /*LATEST NEWS*/
+.seatmap-header {
+  padding: 0 0 0.5em 1.4em;
+}
+
+.seatmap-header-artist {
+  padding: 0 0 0.5em 1.2em;
+}
+
 .seatmap {
-  display: flex;
-  padding: 0 0 8em 0;
-  margin-bottom: 8em;
+  margin: 0 0 10em 1em;
+  border: solid black 2px;
 }
 
 .seatmap:hover {
