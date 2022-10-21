@@ -1,5 +1,4 @@
 {
-
   "name": "Dreamhack Companion",
   "short_name": "DH Companion",
   "start_url": "../index.html",
@@ -16,11 +15,7 @@
         "src": "../pics/logo.jpg",
         "sizes": "700x700",
         "type": "image/png"
-
       }
-
-
-
   ]
 
 
