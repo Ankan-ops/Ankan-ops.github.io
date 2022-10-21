@@ -538,7 +538,8 @@ body {
 
 
 #main-contact {
-
+	display: flex;
+	justify-content: center;
 	margin: 0 0 15em 0;
 	
 }
@@ -557,7 +558,7 @@ body {
 .contact-text {
 
 	font-size: 1.3rem;
-	display:flex;
+	
 	
 }
 
