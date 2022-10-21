@@ -47,7 +47,7 @@ body {
 #all {
 	display: flex;
 	justify-content: center;
-	margin-bottom: 1em;
+	margin-bottom: 10rem;
 	
 	
 	//box-shadow: gray 4px 4px;
@@ -122,20 +122,12 @@ body {
 
 	#all {
 		min-height: 50%;
-		margin-right: 0.4em;
+		margin-right: 0em;
 	}
 }
 
 
 
-@media screen and (max-width: 800px) {
-
-	.main-blocks {
-		min-width: 25%;
-		min-height: 50%;
-		font-size: 0.8em;
-	}
-}
 
 //////////////////////////////////////////////////
 /////////////////////////////////////////////////
@@ -143,14 +135,21 @@ body {
 
 /*Footer and its queries*/
 
-
-
-
-
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 2160px) {
 
 	.main-blocks {
-		min-width: 25%;
+		min-width: 20%;
+		min-height: 10em;
+		font-size: 200%;
+	}
+}
+
+
+
+@media screen and (max-width: 1400px) {
+
+	.main-blocks {
+		min-width: 20%;
 		min-height: 50%;
 		font-size: 0.8em;
 	}
@@ -209,6 +208,10 @@ body {
 }
 
 
+
+
+
+
 .footer-item:last-child {
 	position: fixed;
 	right: 0;
@@ -239,6 +242,7 @@ body {
 	padding:0em 0 3em 0;
 	margin: 8em 0 6em 4em;
 	width: 50ch;
+	
 	
 	
 
@@ -288,11 +292,11 @@ body {
 
 
 .picture-shelf {
-	position: absolute;
-	right: 2em;
-	top: 60rem;
-	box-shadow: 3px 3px 6px black;
-	border: solid rgb(43, 33, 33) 3px;
+	 position: absolute;
+	 right: 2em;
+	 top: 70rem;
+	 box-shadow: 3px 3px 6px black;
+	 border: solid rgb(43, 33, 33) 3px;
 
 
 }
@@ -309,8 +313,8 @@ body {
 @media screen and (max-width: 1200px) {
 
 	.picture-esl {
-		position: relative;
-		
+		position: absolute;
+		top: 0em;
 	}
 }
 
@@ -326,7 +330,19 @@ body {
 	}
 }
 
+@media screen and (max-width:1200px) {
 
+	.picture-shelf {
+		display:flex;
+		left: 2em;
+		margin-top: 50rem;
+		margin-bottom: 40rem;
+		width: 50%;
+		height: 50%;
+
+
+	}
+}
 
 
 
@@ -356,8 +372,8 @@ body {
 /*First list (div) */
 
 #pack-block {
-	display: inline-block;
-	margin-bottom: 0;
+	display: inline-flex;
+	
 }
 
 
@@ -425,6 +441,22 @@ body {
 
 }
 
+@media screen and (max-width: 1200px) {
+	.dreamhack-info {
+		width: 50%;
+		height: 50%;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	#pack-block {
+		width: 55%;
+		height: 55%;
+		
+		
+	}
+}
+
 
 
 
@@ -435,7 +467,7 @@ body {
 	background: #E67553;
 	border-radius: 10px;
 	width: 35em;
-	margin: 0 0 10em 2em;
+	margin: 0 0 8em 2em;
 	font-size: 1.2em;
 	font-weight: bold;
 	padding: 0 0 2em 0;
@@ -458,16 +490,12 @@ body {
 
 
 
-
-
-
-
-
-
-
-
 	////////////////////////////////////////////////////////
 	///////////////////////////////////////////////////////
+
+
+
+
 
 
 
@@ -537,8 +565,14 @@ body {
 
 
 
+
+//////////////////////////////
+/////////////////////////////
+/*Contact css*/
+
 #main-contact {
-	display: flex;
+	display: flex; 
+	flex-direction: column ;
 	justify-content: center;
 	margin: 0 0 15em 0;
 	
@@ -546,7 +580,7 @@ body {
 
 .contact-header {
 	background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
-	width: 14%;
+	width: 20%;
 	display:flex;
 	justify-content: center;
 	border-radius: 10px;
@@ -558,7 +592,7 @@ body {
 .contact-text {
 
 	font-size: 1.3rem;
-	
+	padding-left: 2em;
 	
 }
 
@@ -569,4 +603,18 @@ body {
 	margin-top: 2.5em;
 	font-weight: bold;
 	
+}
+
+
+@media screen and (max-width: 1200px) {
+	.contact-header {
+		background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+		width: 44%;
+		display:flex;
+		justify-content: center;
+		border-radius: 10px;
+		color: white;
+		margin-left: 1.5rem;
+		
+	}
 }
