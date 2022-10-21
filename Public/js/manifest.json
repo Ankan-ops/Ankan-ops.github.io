@@ -2,7 +2,7 @@
 
   "name": "Dreamhack Companion",
   "short_name": "DH Companion",
-  "start_url": "../",
+  "start_url": "../index.html",
   "background_color": "#FFF",
   "theme_color":"#FF4B0A",
   "display": "standalone",
