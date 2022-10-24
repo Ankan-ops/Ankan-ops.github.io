@@ -241,7 +241,7 @@ body {
 .dreamhack-main {
 
 	font-size: 1.5em;
-	padding:0em 0 3em 0;
+	padding: 0em 0 3em 1em;;
 	margin: 8em 0 6em 1em;
 	width: 50ch;
 	
@@ -279,7 +279,7 @@ body {
 
 .picture-esl {
 	position: absolute;
-	top:120%;
+	top:100%;
 	right: 20%;
 	margin-bottom: 10em;
 }
@@ -291,9 +291,10 @@ body {
 
 .picture-dh {
 	position: absolute;
-	top:140%;
+	top:120%;
 	right: 10%;
-	margin-bottom: 5em;
+	padding-bottom: 3em;
+	margin-bottom: 44em;
 }
 
 
@@ -312,9 +313,18 @@ body {
 @media screen and (max-width: 1200px) {
 
 	.picture-esl {
-		position: absolute;
-		left: 0.01em;
+		
 		margin: 23em 0 2em 0;
+		
+	}
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+	.picture-esl {
+		display: none;
 		
 	}
 }
