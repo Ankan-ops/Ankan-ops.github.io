@@ -212,7 +212,7 @@ a:link {
 }
 @media screen and (max-width: 1200px) {
   .picture-elmia {
-    display: flex;
+    display: block;
     justify-content: center;
     width: 80%;
     height: 70%;
@@ -220,8 +220,22 @@ a:link {
     margin: 0 0 7em 3em;
   }
 }
+.stupid {
+  display: flex;
+  justify-content: center;
+}
+
 .picture-elmia {
   border: solid black 3px;
+  margin: 0 2em 15em 4em;
+}
+
+.picture-elmia:hover {
+  display: flex;
+  justify-content: center;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  transition: transform 0.25s ease;
 }
 
 /*Dreamhack info doc*/
@@ -354,51 +368,57 @@ a:link {
 }
 .artists:hover {
   filter: drop-shadow(3px 3px 3px purple);
+  transition: 0.25s ease;
 }
 
 .seatmap:hover {
   filter: drop-shadow(3px 3px 3px purple);
+  transition: 0.25s ease-in-out;
 }
 
 /*Contact css*/
-#main-contact {
+.main-contact {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 0 20em 15em 0;
+  margin: 0 0 15em 0;
 }
 
 .contact-header {
   display: flex;
   justify-content: center;
-  border-radius: 10px;
-  color: white;
+  font-size: 3em;
+  margin-bottom: 4em;
   margin-left: 1.5rem;
 }
 
 .contact-text {
   display: flex;
   justify-content: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding-left: 2em;
-  width: 30ch;
 }
 
 .contact-list li {
   list-style: none;
   margin-top: 2.5em;
+  display: flex;
+  justify-content: center;
   font-weight: bold;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 1200px) {
   .contact-header {
     display: flex;
     justify-content: center;
-    border-radius: 10px;
-    color: white;
-    margin-left: 2rem;
-    margin-bottom: 4rem;
-    width: 20ch;
+    margin-bottom: 5rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #main-contact {
+    display: flex;
+    justify-content: center;
   }
 }
 
