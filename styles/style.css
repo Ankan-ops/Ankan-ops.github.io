@@ -225,17 +225,13 @@ a:link {
   justify-content: center;
 }
 
-.picture-elmia {
-  border: solid black 3px;
+.maps {
   margin: 0 2em 15em 4em;
 }
 
-.picture-elmia:hover {
+.maps:hover {
   display: flex;
   justify-content: center;
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
-  transition: transform 0.25s ease;
 }
 
 /*Dreamhack info doc*/

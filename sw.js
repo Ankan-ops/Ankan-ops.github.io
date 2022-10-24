@@ -3,7 +3,7 @@ self.addEventListener("install", e => {
         caches.open("static").then(cache => {
 
 
-        return cache.addAll(["./" ,"html/dremhackinfo.html" ,"html/latestnews.html","html/information.html","html/contact.html", "styles/style.css", "pics/mainlogo.png", "pics/artists.jpg", "pics/DH.jpg", "pics/esl.png", "pics/glowingdh.jpg","pics/image.jpg","pics/lanshelf.png","pics/logodh.png", "pics/seatmap.jpg" ]) 
+        return cache.addAll(["./", "index.html" ,"html/dreamhack.html" ,"html/latestnews.html","html/information.html","html/contact.html", "styles/style.css", "pics/mainlogo.png", "pics/artists.jpg", "pics/DH.jpg", "pics/esl.png", "pics/glowingdh.jpg","pics/image.jpg","pics/lanshelf.png","pics/logodh.png", "pics/seatmap.jpg", ""  ]) 
         })
     ); 
 });
