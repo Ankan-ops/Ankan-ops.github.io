@@ -3,8 +3,8 @@
 
 
 html {
-	min-height: 100vw;
-	max-width: 100vw;
+	min-height: 100%;
+	max-width: 100%;
 	
 }
 
@@ -140,7 +140,7 @@ body {
 	.main-blocks {
 		min-width: 20%;
 		min-height: 10em;
-		font-size: 200%;
+		font-size: 250%;
 	}
 }
 
@@ -196,6 +196,7 @@ body {
 		margin: 0.5em;
 		display: flex;
 		flex-direction: column;
+		font-size: 65%;
 	}
 }
 
@@ -203,7 +204,8 @@ body {
 
 	#main-footer {
 		display: inline-flex;
-		padding: 2rem 0 2rem 0rem;
+		padding: 2rem 0 3rem 0rem;
+		height: 4vh;
 	}
 }
 
@@ -240,7 +242,7 @@ body {
 
 	font-size: 1.5em;
 	padding:0em 0 3em 0;
-	margin: 8em 0 6em 4em;
+	margin: 8em 0 6em 1em;
 	width: 50ch;
 	
 	
@@ -251,23 +253,27 @@ body {
 @media screen and (max-width: 1200px) {
 
 	.dreamhack-main {
-		width: 30ch;
+		display: block;
+		justify-self:left;
+		width: 22ch;
 		margin-bottom: 10em;
+
+	}
+}
+
+@media screen and (min-width: 2160px) {
+
+	.dreamhack-main {
+		font-size: 4rem;
+
 	}
 }
 
 
 
-
-
-
 /*Pictures*/
 
-#esl {
-	margin-bottom: 5em;
-	
 
-}
 
 
 
@@ -275,7 +281,7 @@ body {
 	position: absolute;
 	top:120%;
 	right: 20%;
-	margin-bottom: 5em;
+	margin-bottom: 10em;
 }
 
 
@@ -301,32 +307,38 @@ body {
 
 }
 
-@media screen and (max-width: 1200px) {
 
-	#esl {
-		position: relative;
-		margin-top: 3rem;
-		min-height: 50%;
-	}
-}
 
 @media screen and (max-width: 1200px) {
 
 	.picture-esl {
-		position: absolute;
-		top: 0em;
+		display: flex;
+		margin: 23em 0 0 4em;
+		
 	}
 }
+
+@media screen and (min-width: 1600px) {
+
+	.picture-esl {
+		display:flex;
+		left: 1em;
+		margin-top: 20rem;
+		margin-bottom: 10rem;
+		width: 20%;
+		height: 20%;
+	}
+}
+
+
+
 
 
 
 @media screen and (max-width: 1200px) {
 
 	.picture-dh {
-		position: absolute;
-		left: -10%;
-		margin-bottom: 10rem;
-		min-height: 50%;
+		display: none;
 	}
 }
 
@@ -344,8 +356,22 @@ body {
 	}
 }
 
+@media screen and (max-width: 1200px) {
 
+	.picture-elmia {
+		display: flex;
+		justify-content: center; 
+		width:80%;
+		height: 70%;
+		padding-bottom: 0em;
+		margin: 0 0 7em 3em;
+	}
+}
 
+.picture-elmia {
+
+	border: solid black 3px;
+}
 
 
 
@@ -419,7 +445,7 @@ body {
 	
 	display: flex;
 	justify-content: center;
-	margin: 0 0 10em 0;
+	margin: 0 0 5em 0;
 	font-size: 2em;
 	
 
@@ -443,16 +469,17 @@ body {
 
 @media screen and (max-width: 1200px) {
 	.dreamhack-info {
-		width: 50vw;
+		width: 87%;
 		height: 50%;
 	}
 }
 
 @media screen and (max-width: 1200px) {
 	#pack-block {
-		width: 55%;
+		width: 97%;
 		height: 55%;
-		
+		display: flex;
+		left: 0;
 		
 	}
 }
@@ -545,7 +572,7 @@ body {
 @media screen and (max-width: 1200px) {
 
 	.artists {
-
+		display: flex;
 		width: 60%;
 		height: auto;
 		
@@ -580,10 +607,8 @@ body {
 }
 
 .contact-header {
-	background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
-	width: 18vw;
-	height: 6vh;
-	display: inline-flex;
+	
+	display: flex;
 	justify-content: center;
 	border-radius: 10px;
 	color: white;
@@ -596,14 +621,14 @@ body {
 	justify-content: center;
 	font-size: 1.3rem;
 	padding-left: 2em;
+	width:30ch;
 	
 }
 
 .contact-list li {
 	list-style: none;
-	display: flex;
-	justify-content: center;
 	margin-top: 2.5em;
+
 	font-weight: bold;
 	
 }
@@ -611,13 +636,14 @@ body {
 
 @media screen and (max-width: 1200px) {
 	.contact-header {
-		background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
-		width: 44%;
 		display:flex;
 		justify-content: center;
 		border-radius: 10px;
 		color: white;
-		margin-left: 1.5rem;
+		margin-left: 2rem;
+		margin-bottom: 4rem;
+		width: 20ch;
+
 		
 	}
 }
